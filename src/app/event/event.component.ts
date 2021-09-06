@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventComponent implements OnInit {
   constructor() {}
-  num;
+  num: number = 0;
 
   ngOnInit(): void {}
   sub() {
