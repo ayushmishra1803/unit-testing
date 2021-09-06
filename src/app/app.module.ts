@@ -6,10 +6,17 @@ import { AppComponent } from './app.component';
 import { AuthService } from './auth.service';
 import { EmployeeComponent } from './employee/employee.component';
 import { EventComponent } from './event/event.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
-  declarations: [AppComponent, EmployeeComponent, EventComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    EmployeeComponent,
+    EventComponent,
+    PostComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [AuthService],
   bootstrap: [AppComponent],
 })
