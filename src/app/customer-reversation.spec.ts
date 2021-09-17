@@ -1,6 +1,6 @@
 import { CustomerRevervation } from './customer-reversation';
 
-fdescribe('custoumer Reservation', () => {
+describe('custoumer Reservation', () => {
   it('Customer Reservation', () => {
     let custumerService = new CustomerRevervation();
     let custumerCount = custumerService.registerCustomer();

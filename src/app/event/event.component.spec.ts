@@ -4,7 +4,7 @@ import { EventComponent } from './event.component';
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
-fdescribe('EventComponent', () => {
+describe('EventComponent', () => {
   let component: EventComponent;
   let fixture: ComponentFixture<EventComponent>;
   let de: DebugElement;

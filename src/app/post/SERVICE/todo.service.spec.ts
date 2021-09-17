@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { TodoService } from './todo.service';
 import { map, tap } from 'rxjs/operators';
 
-fdescribe('TodoService', () => {
+describe('TodoService', () => {
   let service: TodoService;
 
   beforeEach(() => {
@@ -11,10 +11,10 @@ fdescribe('TodoService', () => {
     service = TestBed.inject(TodoService);
   });
 
-  fit('should be created', () => {
+  it('should be created', () => {
     expect(service).toBeTruthy();
   });
-  fit('should return user array', (done) => {
+  it('should return user array', (done) => {
     const user = service
       .getUsers()
       .pipe(
